@@ -4,15 +4,15 @@ GenPro
 Make personal protein databases using next generation sequencing data.
 
 ## Installation
-### 1. Configure CPAN
-Get make if you don't already have it, then configure cpan through the walkthrough:
+### 1. Configure make, build-essential, CPAN
+Get the tools you need, then configure cpan through the walkthrough: (Just keep pressing enter after cpan and it will auto configure)
 ```
 sudo apt install make
+sudo apt-get install build-essential
 cpan
 sudo cpan
 upgrade
 ```
-(Just keep pressing enter after cpan and it will auto configure)
 ### 2. Install [local::lib](https://metacpan.org/pod/local::lib) 
 ```
 user@host:~$ cpan
