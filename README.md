@@ -7,7 +7,7 @@ Make personal protein databases using next generation sequencing data.
 ### 1. Configure CPAN
 Get make if you don't already have it, then configure cpan through the walkthrough:
 ```
-sudo apt-get make
+sudo apt install make
 cpan
 sudo cpan
 upgrade
