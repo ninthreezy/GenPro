@@ -26,14 +26,16 @@ user@host:~$ cpan
 ```
 curl -L https://cpanmin.us | perl - --sudo App::cpanminus
 ```
-### 4. Clone the GenPro repository and install
+### 4. Clone the GenPro repository
 ```
 sudo apt-get git (if you are starting from scratch)
 git clone https://github.com/wingolab/GenPro.git
 cd GenPro
 cpanm GenPro.tar.gz
 ```
-### 5. Install GenPro
+From here you can install GenPro one of two ways:
+
+### 5a. Install GenPro
 ```
 cd GenPro
 cpanm GenPro.tar.gz
