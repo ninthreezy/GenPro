@@ -30,34 +30,21 @@ curl -L https://cpanmin.us | perl - --sudo App::cpanminus
 ```
 sudo apt-get git (if you are starting from scratch)
 git clone https://github.com/wingolab/GenPro.git
-cd GenPro
-cpanm GenPro.tar.gz
 ```
 From here you can install GenPro one of two ways:
-
-### 5a. Install GenPro
+### 5a. Install GenPro with the prebuilt GenPro package
 ```
 cd GenPro
 cpanm GenPro.tar.gz
 ```
-- Install the prebuilt GenPro package in the repository.
+### 5b. Install GenPro manually
 ```
-git clone https://github.com/wingolab/GenPro.git
-cd GenPro
-cpanm GenPro.tar.gz
-```
-
-- Alternatively, untar `GenPro.tar.gz` and install manually. This may require using
-`sudo` depending on how Perl is setup.
-
-```
-git clone https://github.com/wingolab/GenPro.git
 cd GenPro
 tar xzvf GenPro.tar.gz
 cd GenPro-0.01
 perl Makefile.PL
 make test
-make install    
+make install
 ```
 
 ### Dependencies
