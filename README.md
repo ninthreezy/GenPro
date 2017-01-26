@@ -26,21 +26,14 @@ user@host:~$ cpan
 ```
 curl -L https://cpanmin.us | perl - --sudo App::cpanminus
 ```
-### 4. Clone the GenPro repository
+### 4. Clone the GenPro repository and install
 ```
 sudo apt-get git (if you are starting from scratch)
 git clone https://github.com/wingolab/GenPro.git
 cd GenPro
+cpanm GenPro.tar.gz
 ```
-### 5. Install [Cpanel::JSON::XS](https://github.com/rurban/Cpanel-JSON-XS)
-For some reason it fails sometimes to install this dependency so you have to do it manually before installing GenPro
-```
-(in your top level directory)
-git clone https://github.com/rurban/Cpanel-JSON-XS
-cd Cpanel-JSON-XS/
-perl Makefile.PL
-```
-### 6. Install GenPro
+### 5. Install GenPro
 ```
 cd GenPro
 cpanm GenPro.tar.gz
