@@ -4,12 +4,48 @@ GenPro
 Make personal protein databases using next generation sequencing data.
 
 ## Installation
-
-- Install [local::lib](https://metacpan.org/pod/local::lib) and
-[App::cpanminus](https://metacpan.org/pod/App::cpanminus).
-- Clone the GenPro repository.
+### 1. Configure CPAN
+Get make if you don't already have it, then configure cpan through the walkthrough:
+```
+sudo apt-get make
+cpan
+sudo cpan
+upgrade
+```
+(Just keep pressing enter after cpan and it will auto configure)
+### 2. Install [local::lib](https://metacpan.org/pod/local::lib) 
+```
+user@host:~$ cpan
+  cpan[1]> look local::lib
+  user@host:~/.cpan/build/local-lib-1...$ perl Makefile.PL --bootstrap=~/perl5
+  user@host:~/.cpan/build/local-lib-1...$ make && make test && make install
+  user@host:~/.cpan/build/local-lib-1...$ exit
+  cpan[2]> exit
+```
+### 3. Install [App::cpanminus](https://metacpan.org/pod/App::cpanminus).
+```
+curl -L https://cpanmin.us | perl - --sudo App::cpanminus
+```
+### 4. Clone the GenPro repository
+```
+sudo apt-get git (if you are starting from scratch)
+git clone https://github.com/wingolab/GenPro.git
+cd GenPro
+```
+### 5. Install [Cpanel::JSON::XS](https://github.com/rurban/Cpanel-JSON-XS)
+For some reason it fails sometimes to install this dependency so you have to do it manually before installing GenPro
+```
+(in your top level directory)
+git clone https://github.com/rurban/Cpanel-JSON-XS
+cd Cpanel-JSON-XS/
+perl Makefile.PL
+```
+### 6. Install GenPro
+```
+cd GenPro
+cpanm GenPro.tar.gz
+```
 - Install the prebuilt GenPro package in the repository.
-
 ```
 git clone https://github.com/wingolab/GenPro.git
 cd GenPro
