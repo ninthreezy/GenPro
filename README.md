@@ -59,7 +59,7 @@ cpanm GenPro.tar.gz
 git clone https://github.com/wingolab/GenPro.git
 cd GenPro
 tar xzvf GenPro.tar.gz
-cd GenPro
+cd GenPro-0.01
 perl Makefile.PL
 make test
 make install    
