@@ -46,11 +46,9 @@ perl Makefile.PL
 make test
 make install
 ```
-
-### Dependencies
-
+### 6. Manage Dependencies
 The minimum version of Perl is v5.10.0. These are all of the dependencies:
-
+```
     Carp
     Cpanel::JSON::XS
     Data::Dump
@@ -61,17 +59,16 @@ The minimum version of Perl is v5.10.0. These are all of the dependencies:
     IO::Uncompress::Gunzip
     Path::Tiny
     Pod::Usage
-
-
+```
 Most of these come with any standard installation of Perl. To install missing
 packages or update old ones, I suggest installing [local::lib](https://metacpan.org/pod/local::lib)
 and [App::cpanminus](https://metacpan.org/pod/App::cpanminus), which are two
 packages that simplify package installation and do not require `sudo`. After
 they are installed you can install/update with:
-
+```
     cpanm Carp Cpanel::JSON::XS Data::Dump DB_File Digest::SHA Fcntl Getopt::Long \
     IO::Uncompress::Gunzip Path::Tiny
-
+```
 ## Usage
 
 - Download genomic data for a particular organism.
