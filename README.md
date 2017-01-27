@@ -72,7 +72,7 @@ and [App::cpanminus](https://metacpan.org/pod/App::cpanminus) are installed, you
 - Download genomic data for a particular organism.
 
 ```
-GenPro_download_ucsc_data.pl -d local_hg38 -g hg38
+GenPro_download_ucsc_data.pl -d local_hg38 -g hg38 -a
 ```
 
 This will perform a dry-run download of hg38 (genome and annotated gene
